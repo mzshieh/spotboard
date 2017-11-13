@@ -459,6 +459,9 @@ function($, Spotboard) {
     // 어워드 슬라이드 템플릿
     Spotboard.JST['awardslide'] = Handlebars.compile('\
 <div class="award-slide">\
+{{#if picture}}\
+    <div class="award-picture" style="background-image: url({{picture}})"></div>\
+{{/if}}\
     <div class="award-rank">{{humanizeRank rank}}</div>\
     <div class="award-represents">{{group}}</div>\
     <div class="award-teamname">{{name}}</div>\

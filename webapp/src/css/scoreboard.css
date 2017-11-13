@@ -651,12 +651,21 @@ div.team {
     top: 0;
 }
 
+.award-slide > .award-picture,
 .award-slide > .award-rank,
 .award-slide > .award-represents,
 .award-slide > .award-teamname,
 .award-slide > .award-others {
     position: absolute;
     width: 100%;
+}
+
+.award-slide > .award-picture {
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-size: cover;
+    opacity: .4;
 }
 
 .award-slide > .award-rank {
