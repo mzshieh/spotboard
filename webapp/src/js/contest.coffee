@@ -87,7 +87,7 @@ class Team
     constructor : (@contest, @id, @name, @group = null) ->
         # try to get group from parsing..
         if not (group?)
-            regx = /^([^(]+)\(([^)]*)\)$/.exec(@name)
+            regx = /^(.*) \((.*)\)$/.exec(@name)
             try
                 [@name, @group] = [regx[1].trim(), regx[2].trim()] if regx
             catch ex

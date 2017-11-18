@@ -94,6 +94,9 @@ config =
      * e.g. [1000, 1001, 1002]
      */
     exclude_teams : function(team) {
+        /* Award all teams together */
+        return false;
+
         if( [1000, 1001, 1002].indexOf(team.getId()) >= 0 )
             return true;
         return false;
@@ -110,6 +113,9 @@ config =
      */
     //foreign_teams : [ 2000, 2001 ],
     foreign_teams : function(team) {
+        /* Award all teams together */
+        return false;
+
         /* an example config */
         var foreign_teams_list = [2000, 2001];
         var foreign_affiliations = [
@@ -136,7 +142,7 @@ config =
     award_mode         : false,
 
     /** Specify whether to hide the name and affiliation for unrevealed team in award mode. */
-    award_hide_name    : true,
+    award_hide_name    : false,
 
     /**
      * For the purpose of simulating award ceremony with ease,
