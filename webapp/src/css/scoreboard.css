@@ -699,14 +699,15 @@ div.team {
     font-size: 2em;
 }
 
-.award-slide > .award-others ul {
+.award-slide > .award-others table {
     display: inline-block;
     list-style-type: disc;
     text-align: left;
 }
 
-.award-slide > .award-others li span:not(.rank) {
-    margin-right: 0.2em;
+.award-slide > .award-others td span:not(.rank) {
+    margin-left: 0.55em;
+    margin-right: 0.15em;
 }
 
 .award-slide > .award-others .award-teamname {

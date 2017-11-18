@@ -467,17 +467,17 @@ function($, Spotboard) {
     <div class="award-teamname">{{name}}</div>\
 {{#if others}}\
     <div class="award-others">\
-        <ul>\
+        <table>\
             {{#each others}}\
-            <li>\
-                <span class="award-represents">{{group}}</span> &mdash;\
-                <span class="award-teamname">{{name}}</span>\
+            <tr>\
+                <td><span class="award-represents">{{group}}</span></td>\
+                <td><span class="award-teamname">{{name}}</span></td>\
                 {{#if rank}}\
-                    (<span class="award-rank suffix-{{ordinalSuffix rank}}">{{rank}}</span>)\
+                    <td>(<span class="award-rank suffix-{{ordinalSuffix rank}}">{{rank}}</span>)</td>\
                 {{/if}}\
-            </li>\
+            </tr>\
             {{/each}}\
-        </ul>\
+        </table>\
     </div>\
 {{/if}}\
 </div>\
